@@ -18,14 +18,12 @@ html body {
   color: white;
 }
 /* Header section */
-header nav {
-  padding: 24px 160px;
+header nav ul {
   width: 1600px;
   height: 100px;
-}
-
-header nav ul {
+  padding: 24px 160px 24px 160px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -37,21 +35,24 @@ header nav ul li a {
   color: black;
 }
 .logo {
+  width: 222px;
+  height: 38px;
   color: rgb(14, 14, 14);
-
   font-size: 32px;
   font-weight: 700;
   line-height: 38px;
+  text-align: center;
 }
 .signIn-btn {
-  padding: 15px 30px;
+  width: 116px;
+  height: 52px;
+  padding: 15px 20px;
   border: 1px solid rgb(0, 106, 80);
   border-radius: 8px;
-
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  text-align: left;
+  text-align: center;
   transition: all 0.3s ease-in-out;
 }
 
@@ -281,12 +282,12 @@ header nav ul li a {
   margin: 0 auto;
   margin-bottom: 80px;
 }
-.opinion>h3{
+.opinion > h3 {
   color: rgb(14, 14, 14);
-font-size: 40px;
-font-weight: 700;
-line-height: 48px;
-margin-bottom: 24px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 24px;
 }
 .opinion > div {
   width: 100%;
@@ -349,11 +350,288 @@ th {
 
 /* News section */
 
-.news{
+.news {
   width: 1280px;
   height: 1406px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 60px;
 }
-.news div{
+.news > h3 {
+  color: rgb(14, 14, 14);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+}
+.news > p {
+  color: rgba(14, 14, 14, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.news > div {
   width: 1280px;
   height: 402px;
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 24px;
+  background: rgb(255, 255, 255);
+}
+.news-box > img {
+  width: 408px;
+  height: 306px;
+  border-radius: 24px;
+}
+.text-div {
+  width: 744px;
+  height: 290px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 12;
+}
+.text-div h2 {
+  color: rgba(14, 14, 14, 0.8);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  text-align: left;
+}
+.text-div > img {
+  width: 134px;
+  height: 40px;
+}
+.text-div p,
+span {
+  color: rgba(14, 14, 14, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.text-div button {
+  width: 139px;
+  height: 48px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 13px 26px;
+  border: none;
+  text-align: center;
+  border-radius: 8px;
+  background: rgb(0, 106, 80);
+}
+.donate {
+  width: 1280px;
+  height: 464px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 32;
+  padding: 0px;
+  margin-bottom: 80px;
+}
+.donate > h2 {
+  color: rgb(14, 14, 14);
+
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.donate > p {
+  color: rgba(14, 14, 14, 0.7);
+  width: 1104px;
+  height: 48px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.donate .money-box {
+  width: 1071px;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.donate .money-boxes {
+  width: 240px;
+  height: 128px;
+  padding: 40px;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+  color: rgba(14, 14, 14, 0.8);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.donate input[type="text"] {
+  width: 1032px;
+  height: 64px;
+  padding: 20px 40px;
+  background: rgb(255, 255, 255);
+  margin: 32px 0px;
+  outline: none;
+  border: none;
+  box-shadow: 2px 1ppx rgba(14, 14, 14, 0.15);
+  font-size: 1.5rem;
+}
+
+.donate input[type="text"]::placeholder {
+  color: rgba(14, 14, 14, 0.3);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+.donate button {
+  border: 1px solid rgba(14, 14, 14, 0.1);
+  border-radius: 8px;
+  background: rgb(0, 106, 80);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+  padding: 17px 34px;
+}
+
+/* subscribe section */
+
+.subscribe {
+  width: 1280px;
+  height: 395px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 24px;
+  gap: 64;
+  padding: 80px 100px 80px 100px;
+  background: rgb(198, 228, 214);
+}
+.subscribe h2 {
+  color: rgb(14, 14, 14);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.subscribe > p {
+  width: 622px;
+  height: 48px;
+  color: rgba(14, 14, 14, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.subscribe > div {
+  width: 750px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe input[type="email"] {
+  width: 600px;
+  height: 55px;
+  padding: 18px 40px;
+  border-radius: 8px 0px 0px 8px;
+  background: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+}
+.subscribe input[type="email"]::placeholder {
+  color: rgba(14, 14, 14, 0.3);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: left;
+}
+.subscribe button {
+  width: 150px;
+  height: 55px;
+  padding: 17px 34px;
+  border-radius: 0px 8px 8px 0px;
+  background: rgb(0, 106, 80);
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+}
+
+.subscribe .spam {
+  color: rgba(14, 14, 14, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+  margin-top: 24px;
+}
+
+/* Footer part */
+
+footer {
+  width: 1600px;
+  height: 226px;
+  background: rgb(255, 255, 255);
+  padding: 50px 160px;
+  margin-top: 80px;
+}
+
+footer h2 {
+  width: 222px;
+  height: 38px;
+  color: rgb(14, 14, 14);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 31.5px;
+}
+footer hr {
+  border: 1px solid rgba(14, 14, 14, 0.1);
+}
+.logo-box {
+  width: 120px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 31.5px;
 }
