@@ -17,11 +17,25 @@ html body {
   background-color: #006d50;
   color: white;
 }
+.money-hover:hover{
+  background-color:rgba(22,132,181,255);
+}
+.btn-hover:hover{
+  background-color:rgba(22,132,181,255);
+}
 /* Header section */
-header nav ul {
+header{
   width: 1600px;
   height: 100px;
-  padding: 24px 160px 24px 160px;
+  text-align: left;
+  padding: 24px 130px;
+}
+
+header nav{
+  width: 1280px;
+  height: 100px;
+}
+header nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -41,7 +55,6 @@ header nav ul li a {
   font-size: 32px;
   font-weight: 700;
   line-height: 38px;
-  text-align: center;
 }
 .signIn-btn {
   width: 116px;
@@ -217,7 +230,7 @@ header nav ul li a {
   font-weight: 400;
   line-height: 24px;
 }
-.vision-box > button {
+.vision-box >button {
   width: 122px;
   height: 41px;
   border-radius: 8px;
@@ -228,6 +241,11 @@ header nav ul li a {
   font-weight: 600;
   line-height: 19px;
   border: none;
+  
+}
+.vision-box > button:hover{
+  background-color: aquamarine;
+  cursor: pointer;
 }
 
 /* qoute */
@@ -486,6 +504,15 @@ span {
   line-height: 48px;
   letter-spacing: 0%;
   text-align: center;
+  transition: all 0.3s ease-in;
+}
+.money-boxes:nth-child(2){
+  background-color:#006d50;
+  color: whitesmoke;
+}
+.money-boxes:hover{
+  background-color:#006d50;
+  color: whitesmoke;
 }
 
 .donate input[type="text"] {
@@ -554,7 +581,7 @@ span {
   margin-bottom: 24px;
 }
 
-.subscribe > div {
+.subscribe > form {
   width: 750px;
   height: 55px;
   display: flex;
